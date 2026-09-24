@@ -7,7 +7,7 @@ from openai import OpenAI
 
 @lru_cache
 def get_llm_client() -> OpenAI:
-    """Buat/ambil satu instance client OpenAI SDK untuk chat/generation (singleton).
+    """Buat/ambil satu instance client OpenAI SDK untuk chat/generation (singleton) .
 
     Memakai SDK `openai` bukan berarti terikat ke OpenAI cloud — `base_url`
     diarahkan ke server yang kompatibel dengan format API OpenAI (di proyek
