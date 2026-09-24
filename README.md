@@ -1,4 +1,4 @@
-# RAG Example
+# RAG AI Search
 
 Proyek Django untuk contoh aplikasi RAG (Retrieval-Augmented Generation), dengan PostgreSQL sebagai database utama dan Qdrant sebagai vector database.
 
@@ -28,7 +28,7 @@ Variabel yang tersedia:
 
 | Variabel | Keterangan | Default |
 |---|---|---|
-| `DB_NAME` | Nama database PostgreSQL | `rag_example` |
+| `DB_NAME` | Nama database PostgreSQL | `rag_ai_search` |
 | `DB_USER` | User PostgreSQL | `postgres` |
 | `DB_PASSWORD` | Password PostgreSQL | `postgres` |
 | `DB_HOST` | Host PostgreSQL | `localhost` |
@@ -64,7 +64,7 @@ Alternatif, menjalankan tiap container manual:
 docker run -d --name pg-vector -p 5433:5432 \
   -e POSTGRES_USER=postgres \
   -e POSTGRES_PASSWORD=postgres \
-  -e POSTGRES_DB=rag_example \
+  -e POSTGRES_DB=rag_ai_search \
   pgvector/pgvector:pg16
 
 docker run -d --name qdrant -p 6333:6333 -p 6334:6334 qdrant/qdrant

@@ -783,7 +783,7 @@ wheels = [
 ]
 
 [[package]]
-name = "rag-example"
+name = "rag-ai-search"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
